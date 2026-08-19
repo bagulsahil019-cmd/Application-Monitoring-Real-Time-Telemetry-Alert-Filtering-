@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: #07090e; /* Pitch black / deep charcoal */
+    color: #cbd5e1; /* Slate-300 light text */
+  }
+}
+
+@layer utilities {
+  /* Matte card container for dark monitor panels */
+  .min-card {
+    background-color: #11151d;
+    border: 1px solid rgba(51, 65, 85, 0.6); /* border-slate-700/60 */
+    border-radius: 1rem; /* rounded-2xl */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -2px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Neon glowing effects for hardware meters */
+  .shadow-glow-emerald {
+    box-shadow: 0 0 15px -3px rgba(16, 185, 129, 0.3);
+  }
+
+  .shadow-glow-cyan {
+    box-shadow: 0 0 15px -3px rgba(6, 182, 212, 0.3);
+  }
+
+  .shadow-glow-violet {
+    box-shadow: 0 0 15px -3px rgba(168, 85, 247, 0.3);
+  }
+
+  .shadow-glow-red {
+    box-shadow: 0 0 15px -3px rgba(239, 68, 68, 0.3);
+  }
+
+  .heart-pulse {
+    animation: heartPulse 1.6s ease-in-out infinite;
+  }
+
+  @keyframes heartPulse {
+    0%, 100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.3);
+      opacity: 0.5;
+    }
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #475569;
+  }
+}
