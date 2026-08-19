@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.git/
+.system_generated/
+.gemini/
+.antigravity-ide/
+*.log
+screenshot.png
+dashboard_screenshot.png
+google_test.png
+google.png
+Dockerfile
+.dockerignore
